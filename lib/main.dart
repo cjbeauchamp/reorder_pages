@@ -29,6 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: PJMultiPhotoCard(
+        allowReorder: true,
         images: [
           'https://placehold.co/600x400/png',
           'https://placehold.co/400/png',

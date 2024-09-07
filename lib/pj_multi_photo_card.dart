@@ -18,8 +18,9 @@ class PJMultiPhotoCard extends StatefulWidget {
   final List<dynamic> images; // can be http urls, or assets
   final Function(int)? pageChanged;
   final int? initialPage;
+  final bool allowReorder;
 
-  const PJMultiPhotoCard({super.key, required this.images, this.pageChanged, this.initialPage});
+  const PJMultiPhotoCard({super.key, required this.images, this.pageChanged, this.initialPage, required this.allowReorder});
 
   @override
   State<PJMultiPhotoCard> createState() => _PJMultiPhotoCardState();
